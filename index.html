@@ -4,16 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>인터파크</title>
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <div class="wrap">
       <!-- 상단 영역 -->
-      <header class="header"></header>
+      <header class="header">
+        <!-- 레이아웃 영역 : div -->
+        <div class="h-inner">
+          <div class="h-top">
+            <div class="h-top-left">
+              <a href="index.html" class="logo"> </a>
+              <!-- 검색은 div 하나 주자 -->
+              <div class="h-search">
+                <!-- 사용자가 데이터를 입력한다. -->
+                <form class="search-f">
+                  <input type="text" class="search-word" />
+                  <input type="button" value="검색" class="search-bt" />
+                </form>
+              </div>
+            </div>
+            <div class="h-top-right">
+              <ul class="mymenu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li>
+                  <a href="#" id="mypage-bt" class="mypage-bt">
+                    마이페이지
+                    <img src="./images/arrow.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="h-bottom">
+            <ul class="h-bottom-cate">
+              <li>
+                <a href="#">
+                  <img src="./images/icon_tour.png" alt="" />
+                  투어
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon_ticket.png" alt="" />
+                  티켓
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon_shopping.png" alt="" />
+                  쇼핑
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon_book.png" alt="" />
+                  도서
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon_triple.png" alt="" />
+                  트리플
+                </a>
+              </li>
+              <li>
+                <a href="#" id="special-hot" class="special-hot">
+                  <img src="./images/icon_special.png" alt="" />
+                  여행초특가
+                </a>
+              </li>
+            </ul>
+            <ul class="h-today-menu">
+              <li class="event">
+                <a href="#">
+                  <img src="./images/icon_gnb_nol.png" alt="" />
+                  항공 즉시할인
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
       <!-- 메인 영역 -->
-      <div class="main"></div>
+      <div class="main">메인</div>
       <!-- 하단 영역 -->
-      <footer class="footer"></footer>
+      <footer class="footer">하단</footer>
     </div>
   </body>
 </html>
