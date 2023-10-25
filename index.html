@@ -100,49 +100,7 @@
             <!-- Swiper -->
             <div class="swiper visual-slide">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <!-- 실제 내용 배치 -->
-                  <div class="v-slide-item">
-                    <a href="#">
-                      <img src="./images/v1.png" alt="" />
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="v-slide-item">
-                    <a href="#">
-                      <img src="./images/v2.jpg" alt="" />
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="v-slide-item">
-                    <a href="#">
-                      <img src="./images/v3.jpg" alt="" />
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="v-slide-item">
-                    <a href="#">
-                      <img src="./images/v4.jpg" alt="" />
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="v-slide-item">
-                    <a href="#">
-                      <img src="./images/v5.jpg" alt="" />
-                    </a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="v-slide-item">
-                    <a href="#">
-                      <img src="./images/v6.png" alt="" />
-                    </a>
-                  </div>
-                </div>
+                <!-- 외부 데이터 연동 -->
               </div>
             </div>
             <!-- Swiper Navigation -->
@@ -158,9 +116,7 @@
   </body>
 </html>
 
-<script>
-  console.log(" html 태그 끝 에 기재가 정말 좋은 자리");
-</script>
+<script src="js/visual.js"></script>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -171,7 +127,7 @@
   var swiper = new Swiper(".visual-slide", {
     slidesPerView: 2,
     spaceBetween: 24,
-    loop: true,
+    // loop: true,
     autoplay: {
       delay: 1000,
       disableOnInteraction: false,
