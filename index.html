@@ -6,12 +6,16 @@
     <title>인터파크</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="wrap">
       <!-- 상단 영역 -->
       <header class="header">
-        <!-- 레이아웃 영역 : div -->
+        <!-- 레이아웃 영역  -->
         <div class="h-inner">
           <div class="h-top">
             <div class="h-top-left">
@@ -89,9 +93,93 @@
         </div>
       </header>
       <!-- 메인 영역 -->
-      <div class="main">메인</div>
+      <div class="main">
+        <!-- 비주얼 영역 -->
+        <section class="visual">
+          <div class="visual-inner">
+            <!-- Swiper -->
+            <div class="swiper visual-slide">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- 실제 내용 배치 -->
+                  <div class="v-slide-item">
+                    <a href="#">
+                      <img src="./images/v1.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="v-slide-item">
+                    <a href="#">
+                      <img src="./images/v2.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="v-slide-item">
+                    <a href="#">
+                      <img src="./images/v3.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="v-slide-item">
+                    <a href="#">
+                      <img src="./images/v4.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="v-slide-item">
+                    <a href="#">
+                      <img src="./images/v5.jpg" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="v-slide-item">
+                    <a href="#">
+                      <img src="./images/v6.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Swiper Navigation -->
+            <button class="v-slide-prev">Prev</button>
+            <button class="v-slide-next">Next</button>
+          </div>
+        </section>
+        <!-- 비주얼 슬라이드 영역 -->
+      </div>
       <!-- 하단 영역 -->
       <footer class="footer">하단</footer>
     </div>
   </body>
 </html>
+
+<script>
+  console.log(" html 태그 끝 에 기재가 정말 좋은 자리");
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  // swiper를 활용해요
+  var swiper = new Swiper(".visual-slide", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    speed: 500,
+    navigation: {
+      nextEl: ".v-slide-next",
+      prevEl: ".v-slide-prev",
+    },
+  });
+</script>
