@@ -1,0 +1,56 @@
+/* .recommend {
+  position: relative;
+  padding: 30px 0 60px;
+}
+
+.recommend-inner {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.recommend-header {
+  position: relative;
+}
+
+.recommend-title {
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.recommend-txt {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #a7a9a7;
+  text-align: center;
+}
+
+.recommend-main {
+  position: relative;
+  padding: 25px 0;
+}
+
+.recommend-cate {
+  display: flex;
+  justify-content: center;
+}
+
+.recommend-list {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.recommend-list li {
+  position: relative;
+}
+
+.recommend-go {
+  position: relative;
+  text-align: center;
+} */

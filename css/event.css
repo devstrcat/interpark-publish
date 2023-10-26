@@ -1,37 +1,32 @@
-.visual {
+.event-slide-item {
   position: relative;
-  padding: 30px 0 60px;
-}
-.visual-inner {
-  position: relative;
-  width: 1280px;
-  height: 345px;
-  margin: 0 auto;
-}
-/* 다음 코드 변경하지 마세요. */
-.swiper {
-  width: 100%;
-  height: 100%;
+  width: 300.5px;
 }
 
-.visual-slide {
-}
-.visual-slide-item {
-  position: relative;
-  width: 628px;
-}
-.visual-slide-item a {
+.event-slide-item a {
   position: relative;
   width: 100%;
   display: block;
   overflow: hidden;
   border-radius: 13px;
 }
-.visual-slide-item a img {
+
+.event-slide-item a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.05);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));
+}
+
+.event-slide-item a img {
   width: 100%;
 }
 
-.visual-slide-prev {
+.event-slide-prev {
   position: absolute;
   top: 50%;
   left: 0px;
@@ -49,7 +44,7 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-.visual-slide-prev::before {
+.event-slide-prev::before {
   content: "";
   position: relative;
   width: 10px;
@@ -61,7 +56,7 @@
   transform: rotateY(180deg);
 }
 
-.visual-slide-next {
+.event-slide-next {
   position: absolute;
   top: 50%;
   right: 0px;
@@ -78,7 +73,7 @@
   border-radius: 50%;
 }
 
-.visual-slide-next::before {
+.event-slide-next::before {
   content: "";
   position: relative;
   width: 10px;

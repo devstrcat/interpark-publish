@@ -1,0 +1,98 @@
+.common {
+  position: relative;
+  padding: 30px 0 60px;
+}
+
+.c-inner {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.c-header {
+  position: relative;
+}
+
+.c-title {
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+}
+
+.c-txt {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #a7a9a7;
+  text-align: center;
+}
+
+.c-main {
+  position: relative;
+  padding: 25px 0;
+}
+
+.c-cate {
+  display: flex;
+  justify-content: center;
+}
+
+.c-list {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.c-list li {
+  position: relative;
+}
+
+.cate-bt {
+  position: relative;
+  height: 4.4rem;
+  display: block;
+  padding: 0 2rem;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  color: #111;
+  cursor: pointer;
+  border-radius: 4.4rem;
+}
+
+.cate-bt-active {
+  background-color: #333;
+  color: #fff;
+  text-shadow: 0.025rem 0 0.01rem, -0.025rem 0 0.01rem;
+}
+
+.c-go {
+  position: relative;
+  text-align: center;
+}
+
+.go-home {
+  height: 5.6rem;
+  margin: 2rem auto 0;
+  padding: 0 3.9rem;
+  font-size: 1.6rem;
+  border-radius: 3.8rem;
+  color: #333;
+  font-weight: 700;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.go-home:after {
+  content: "";
+  display: inline-block;
+  width: 0.7rem;
+  height: 1.1rem;
+  margin-left: 0.7rem;
+  background: url(../images/icon_linkArrow.svg) no-repeat 50%;
+}

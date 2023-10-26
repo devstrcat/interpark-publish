@@ -1,89 +1,66 @@
 // 백엔드 Response 데이터
-const xhttp = new XMLHttpRequest();
-xhttp.open("GET", "visual.json");
-xhttp.send();
-xhttp.onreadystatechange = function (event) {
-  //   console.log(event.target);
+// 전체 비주얼 슬라이드 숫자 : 6개
 
+// 각각 필요로 한 항목이 무엇인가
+//  - 이미지 경로 필요
+//  - 클릭했을 떄 이동할 경로(URL)
+const xh = new XMLHttpRequest();
+xh.open("GET", "visual.json");
+xh.send();
+xh.onreadystatechange = function (event) {
+  //   console.log(event.target);
   if (event.target.readyState === XMLHttpRequest.DONE) {
     console.log("자료왔다!!");
     console.log(event.target.response);
     const result = JSON.parse(event.target.response);
     console.log(result);
+
+    makeVisualSlideHtml(result);
   }
 };
 
-const visualRes = {};
+function makeVisualSlideHtml(_data) {
+  const visualRes = _data;
+  let visualHtml = "";
 
-// 출력을 시켜줄 문장을 만들자.
-let visualHtml = "";
+  // 출력을 시켜줄 문장을 만들자
 
-// total 만큼 반복하자
-// for 는 반복을 하는데 true 인 경우에만 반복한다.
-// for (let i = 1; i < 6; i++) {
-//   let temp = `
-//     <div class="swiper-slide">
-//         <div class="v-slide-item">
-//             <a href="${visualRes["visual_" + i].url}">
-//                 <img src="${visualRes["visual_" + i].file}" alt="${
-//     visualRes["visual_" + i].url
-//   }" />
-//             </a>
-//         </div>
-//     </div>
-// `;
-//   visualHtml += temp;
-// }
+  // total만큼 반복하자
+  // for은 반복을 하는데 true인 경무만 반복한다
+  for (let i = 1; i <= visualRes.total; i++) {
+    let temp = `
+<div class="swiper-slide">
+<div class="visual-slide-item">
+<a href="${visualRes["visual_" + i].url}">
+<img src="${visualRes["visual_" + i].file}" alt="${
+      visualRes["visual_" + i].url
+    }" />
+</a>
+</div>
+</div>
+`;
+    console.log(temp);
+    visualHtml += temp;
+  }
 
-console.log(visualHtml);
-// 어디다가 자료를 출력할 것인지 지정
-const visualSlide = document.querySelector(".visual-slide .swiper-wrapper");
-visualSlide.innerHTML = visualHtml;
+  // 어디다가 자료를 출력할 것인지 지정
+  const visualSlide = document.querySelector(".visual-slide .swiper-wrapper");
+  visualSlide.innerHTML = visualHtml;
 
-console.log(visualRes);
+  var swiper = new Swiper(".visual-slide", {
+    slidesPerView: 2,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    speed: 500,
+    navigation: {
+      nextEl: ".visual-slide-next",
+      prevEl: ".visual-slide-prev",
+    },
+  });
+}
 
-// `
-// <div class="swiper-slide">
-//     <!-- 실제 내용 배치 -->
-//     <div class="v-slide-item">
-//         <a href="#">
-//             <img src="./images/v1.png" alt="" />
-//         </a>
-//     </div>
-// </div>
-// <div class="swiper-slide">
-//     <div class="v-slide-item">
-//         <a href="#">
-//             <img src="./images/v2.jpg" alt="" />
-//         </a>
-//     </div>
-// </div>
-// <div class="swiper-slide">
-//     <div class="v-slide-item">
-//         <a href="#">
-//             <img src="./images/v3.jpg" alt="" />
-//         </a>
-//     </div>
-// </div>
-// <div class="swiper-slide">
-//     <div class="v-slide-item">
-//         <a href="#">
-//             <img src="./images/v4.jpg" alt="" />
-//         </a>
-//     </div>
-// </div>
-// <div class="swiper-slide">
-//     <div class="v-slide-item">
-//         <a href="#">
-//             <img src="./images/v5.jpg" alt="" />
-//         </a>
-//     </div>
-// </div>
-// <div class="swiper-slide">
-//     <div class="v-slide-item">
-//         <a href="#">
-//             <img src="./images/v6.png" alt="" />
-//         </a>
-//     </div>
-// </div>
-// `;
+// console.log(visualRes);
