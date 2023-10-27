@@ -30,13 +30,13 @@ function makeVisualSlideHtml(_data) {
   for (let i = 1; i <= visualRes.total; i++) {
     let temp = `
 <div class="swiper-slide">
-<div class="visual-slide-item">
-<a href="${visualRes["visual_" + i].url}">
-<img src="${visualRes["visual_" + i].file}" alt="${
+  <div class="visual-slide-item">
+    <a href="${visualRes["visual_" + i].url}">
+      <img src="${visualRes["visual_" + i].file}" alt="${
       visualRes["visual_" + i].url
     }" />
-</a>
-</div>
+    </a>
+  </div>
 </div>
 `;
     console.log(temp);
@@ -47,20 +47,20 @@ function makeVisualSlideHtml(_data) {
   const visualSlide = document.querySelector(".visual-slide .swiper-wrapper");
   visualSlide.innerHTML = visualHtml;
 
-  var swiper = new Swiper(".visual-slide", {
-    slidesPerView: 2,
-    spaceBetween: 24,
-    loop: true,
+  var swiperVisual = new Swiper(".visual-slide", {
+    slidesPerView: 2, // 슬라이드 몇장씩 보여주니
+    spaceBetween: 24, // 보여지는 슬라이드 간의 간격
+    loop: true, // 반복해서 무한루프
+    //자동 실행
     autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
+      delay: 1000, //대기시간
+      disableOnInteraction: false, // 사용자 터치후 자동실행 다시
     },
-    speed: 500,
+    speed: 500, // 이동 속도 : 1000 은 1초
+    // 좌측, 우측 이동 버튼
     navigation: {
       nextEl: ".visual-slide-next",
       prevEl: ".visual-slide-prev",
     },
   });
 }
-
-// console.log(visualRes);

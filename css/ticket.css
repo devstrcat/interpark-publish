@@ -1,0 +1,35 @@
+.ticket-slide-wrap {
+  height: 535px;
+}
+
+.ticket-slide-item {
+  position: relative;
+  height: 535px;
+  border: 0;
+  overflow: hidden;
+}
+
+.ticket-link {
+  display: block;
+  height: 100%;
+}
+
+.ticket-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.ticket-img img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+
+.ticket-info {
+  position: relative;
+  height: calc(100% - 400px);
+  padding: 2rem;
+}

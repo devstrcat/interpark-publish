@@ -29,14 +29,16 @@ function makeEventSlideHtml(_data) {
   // for은 반복을 하는데 true인 경무만 반복한다
   for (let i = 1; i <= eventRes.total; i++) {
     let temp = `
-<div class="swiper-slide">
-<div class="event-slide-item">
-<a href="${eventRes["event_" + i].url}">
-<img src="${eventRes["event_" + i].file}" alt="${eventRes["event_" + i].url}" />
-</a>
-</div>
-</div>
-`;
+      <div class="swiper-slide">
+        <div class="event-slide-item">
+          <a href="${eventRes["event_" + i].url}">
+            <img src="${eventRes["event_" + i].file}" alt="${
+      eventRes["event_" + i].url
+    }" />
+          </a>
+        </div>
+      </div>
+    `;
     console.log(temp);
     eventHtml += temp;
   }
@@ -45,12 +47,16 @@ function makeEventSlideHtml(_data) {
   const eventSlide = document.querySelector(".event-slide .swiper-wrapper");
   eventSlide.innerHTML = eventHtml;
 
-  var swiper = new Swiper(".event-slide", {
-    slidesPerView: 4,
-    spaceBetween: 26,
-    // loop: true,
+  const swiperEvent = new Swiper(".event-slide", {
+    spaceBetween: 24,
+    breakpoints: {
+      1280: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+      },
+    },
     autoplay: {
-      delay: 4000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     // speed: 500,
@@ -60,5 +66,3 @@ function makeEventSlideHtml(_data) {
     },
   });
 }
-
-console.log(eventRes);

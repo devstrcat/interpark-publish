@@ -14,8 +14,6 @@
   height: 100%;
 }
 
-.visual-slide {
-}
 .visual-slide-item {
   position: relative;
   width: 628px;
@@ -29,61 +27,4 @@
 }
 .visual-slide-item a img {
   width: 100%;
-}
-
-.visual-slide-prev {
-  position: absolute;
-  top: 50%;
-  left: 0px;
-
-  width: 50px;
-  height: 50px;
-  border: 1px solid #e5e1e5;
-  /* 그림자 */
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
-  z-index: 2;
-
-  background-color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-  transform: translateX(-50%) translateY(-50%);
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
-.visual-slide-prev::before {
-  content: "";
-  position: relative;
-  width: 10px;
-  height: 18px;
-  display: block;
-  margin: 0 auto;
-  background: url("../images/slider_arrow.svg") no-repeat center;
-
-  transform: rotateY(180deg);
-}
-
-.visual-slide-next {
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #e5e1e5;
-  /* 그림자 */
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.13);
-  z-index: 2;
-
-  background-color: rgba(255, 255, 255, 0.7);
-  cursor: pointer;
-  transform: translate(50%, -50%);
-  border-radius: 50%;
-}
-
-.visual-slide-next::before {
-  content: "";
-  position: relative;
-  width: 10px;
-  height: 18px;
-  display: block;
-  margin: 0 auto;
-  background: url("../images/slider_arrow.svg") no-repeat center;
 }

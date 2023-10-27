@@ -1,0 +1,92 @@
+.tour-slide-wrap {
+  height: 355px;
+}
+
+.tour-slide-item {
+  height: 355px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+
+.tour-link {
+  height: 100%;
+  display: block;
+}
+
+.tour-img {
+  position: relative;
+  width: 100%;
+  height: 244px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.tour-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tour-info {
+  position: relative;
+  height: calc(100% - 244px);
+  padding: 2.3rem 2rem 1.8rem;
+}
+
+.tour-good-list {
+  position: relative;
+}
+
+.tour-good-list li {
+  margin-bottom: 5px;
+}
+
+.tour-good-list li:first-child {
+  position: absolute;
+  top: -4rem;
+  padding: 0 1.2rem;
+  background-color: #1769ff;
+  border-radius: 0.4rem;
+}
+
+.tour-good-list li:last-child {
+  margin-bottom: 0;
+}
+
+.tour-box {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  color: #fff;
+}
+
+.tour-good-list li p {
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #111;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tour-good-list p.tour-p-blue {
+  color: #1769ff;
+}
+
+.tour-good-info-price {
+  overflow: hidden;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #111;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.tour-good-info-price em {
+  position: relative;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+}
