@@ -1,67 +1,46 @@
 window.addEventListener("load", function () {
-  // 백엔드 Response 데이터
-  // 전체 비주얼 슬라이드 숫자 : 20개
-
-  // 각각 필요로 한 항목이 무엇인가
-  //  - 이미지 경로 필요
-  //  - 클릭했을 떄 이동할 경로(URL)
   const fileName = "event.json";
   const xhe = new XMLHttpRequest();
   xhe.open("GET", fileName);
   xhe.send();
   xhe.onreadystatechange = function (event) {
-    //   console.log(event.target);
     if (event.target.readyState === XMLHttpRequest.DONE) {
-      // console.log("자료왔다!!");
-      // console.log(event.target.response);
-      const result = JSON.parse(event.target.response);
-      // console.log(result);
-
-      makeEventSlideHtml(result);
+      const res = event.target.response;
+      const json = JSON.parse(res);
+      makeHtmlTag(json);
     }
   };
 
-  function makeEventSlideHtml(_data) {
-    const eventRes = _data;
-    let eventHtml = "";
+  function makeHtmlTag(_res) {
+    let htmlEventTag = ``;
 
-    // 출력을 시켜줄 문장을 만들자
+    for (let i = 1; i < _res.total; i++) {
+      const index = i + 1;
+      const obj = _res["event_" + index];
 
-    // total만큼 반복하자
-    // for은 반복을 하는데 true인 경무만 반복한다
-    for (let i = 1; i <= eventRes.total; i++) {
-      let temp = `
+      const tempTag = `
       <div class="swiper-slide">
         <div class="event-slide-item">
-          <a href="${eventRes["event_" + i].url}">
-            <img src="${eventRes["event_" + i].file}" alt="${
-        eventRes["event_" + i].url
-      }" />
+          <a href="${obj.url}">
+            <img src="${obj.file}" alt="${obj.url}" />
           </a>
         </div>
       </div>
     `;
-      // console.log(temp);
-      eventHtml += temp;
+      htmlEventTag += tempTag;
     }
 
-    // 어디다가 자료를 출력할 것인지 지정
     const eventSlide = document.querySelector(".event-slide .swiper-wrapper");
-    eventSlide.innerHTML = eventHtml;
+    eventSlide.innerHTML = htmlEventTag;
 
     const eventSwiper = new Swiper(".event-slide", {
       spaceBetween: 24,
-      breakpoints: {
-        1280: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-        },
-      },
+      slidesPerView: 4,
+      slidesPerGroup: 4,
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
-      // speed: 500,
       navigation: {
         nextEl: ".event-slide-next",
         prevEl: ".event-slide-prev",

@@ -39,22 +39,21 @@
   border-radius: 1.2rem;
 }
 
-.ticket-img:after {
-  content: "1";
-  left: 2.2rem;
-  bottom: 14.4rem;
-  font-size: 7rem;
-  line-height: 8.35rem;
-  position: absolute;
-  font-weight: 700;
-  color: #fff;
-  z-index: 1;
-}
-
 .ticket-info {
   position: relative;
   height: calc(100% - 400px);
   padding: 1.6rem 0.8rem;
+}
+
+.ticket-count {
+  position: absolute;
+  bottom: 14.4rem;
+  left: 2.2rem;
+  z-index: 1;
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 8.35rem;
+  color: #fff;
 }
 
 .ticket-good-info-title {
@@ -103,19 +102,19 @@
 }
 
 .ticket-slide-item-btnmore {
-  display: flex;
   height: 40rem;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .ticket-link i {
-  display: block;
   width: 5rem;
   height: 5rem;
+  display: block;
   margin: 0 auto 0.6rem;
-  border-radius: 5rem;
   background: url(../images/btn_moreProdu.svg) no-repeat 50%;
+  border-radius: 5rem;
 }
 
 .ticket-link g {
