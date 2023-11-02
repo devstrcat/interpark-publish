@@ -5,7 +5,7 @@
     "url": "a.html",
     "title": "태양의서커스 〈루치아〉",
     "place": "잠실종합운동장 내 빅탑",
-    "duration": "2023.10.25 ~ 2023.12.31",
+    "duration": "2023.10.25 - 2023.12.31",
     "class": "blue",
     "txt": "좌석우위",
     "count": "1"
@@ -25,7 +25,7 @@
     "url": "c.html",
     "title": "태양의서커스 〈루치아〉 - 부산",
     "place": "신세계 센텀시티 내 빅탑",
-    "duration": "2024.01.13 ~ 2024.02.04",
+    "duration": "2024.01.13 - 2024.02.04",
     "class": "blue",
     "txt": "좌석우위",
     "count": "3"
@@ -71,13 +71,6 @@
     "count": "7"
   },
   "ticket_8": {
-    "file": "images/ticket1.gif",
-    "url": "c.html",
-    "title": "태양의서커스 〈루치아〉",
-    "place": "잠실종합운동장 내 빅탑",
-    "duration": "2023.10.25 ~ 2023.12.31",
-    "class": "blue",
-    "txt": "좌석우위",
-    "count": "8"
+    "url": "c.html"
   }
 }

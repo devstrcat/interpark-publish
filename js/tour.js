@@ -43,7 +43,7 @@ window.addEventListener("load", function () {
                 </li>
                 <li>
                     <span class="tour-good-info-price">
-                    <em>${obj.em}</em>원~
+                    <em>${obj.price}</em>원~
                     </span>
                 </li>
                 </ul>

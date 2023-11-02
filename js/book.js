@@ -1,10 +1,10 @@
 window.addEventListener("load", function () {
   const fileName = "book.json";
 
-  const xhti = new XMLHttpRequest();
-  xhti.open("GET", fileName);
-  xhti.send();
-  xhti.onreadystatechange = function (event) {
+  const xhb = new XMLHttpRequest();
+  xhb.open("GET", fileName);
+  xhb.send();
+  xhb.onreadystatechange = function (event) {
     if (event.target.readyState === XMLHttpRequest.DONE) {
       const res = event.target.response;
       const json = JSON.parse(res);

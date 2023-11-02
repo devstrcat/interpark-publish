@@ -22,6 +22,11 @@
 // })
 
 window.addEventListener("load", function () {
+  // 숫자에 콤마를 출력한 함수
+  function numberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   // 추천 상품 슬라이드 기능
   // 글로써 코딩 시나리오 작성 : 의사코드
   // 1. 외부 데이터를 불러온다.
@@ -51,6 +56,7 @@ window.addEventListener("load", function () {
   // html 태그를 만드는 기능
   function makeHtmlTag(_res) {
     // 기능 작성
+
     // 전달받은 문자열을 js 에서 사용하도록 JSON 데이터로 해석(parse)하여 객체화 { 원시데이터 묶음 } 한다.
     // console.log(_res);
 
@@ -76,32 +82,51 @@ window.addEventListener("load", function () {
       const index = i + 1;
       const obj = _res["recommend_" + index];
 
-      const tempTag = `
-      <div class="swiper-slide">
-        <div class="recommend-slide-item">
-          <a href="${obj.url}" class="recommend-link">
-            <div class="recommend-img">
-                <img src="${obj.file}" alt="${obj.url}" />
-            </div>
-            <div class="recommend-info">
-              <ul class="recommend-good-list">
-                <li>
-                  <span class="recommend-good-info-price">
-                    <b>${obj.b}</b>
-                    <em>${obj.em}</em>원~
-                  </span>
-                </li>
-                <li>
-                  <p class="recommend-good-info-desc">
-                  ${obj.p}
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </a>
+      let tempTag = ``;
+
+      // 마지막 json 에서는 url만 읽어들인다.
+      // 그렇지 않으면 일반적으로 모두 출력한다.
+      if (i !== _res.total - 1) {
+        tempTag = `
+        <div class="swiper-slide">
+          <div class="recommend-slide-item">
+            <a href="${obj.url}" class="recommend-link">
+              <div class="recommend-img">
+                  <img src="${obj.file}" alt="${obj.url}" />
+              </div>
+              <div class="recommend-info">
+                <ul class="recommend-good-list">
+                  <li>
+                    <span class="recommend-good-info-price">
+                      <b>${obj.discount === 0 ? "" : obj.discount + "%"}</b>
+                      <em>${numberWithCommas(obj.price)}</em>원~
+                    </span>
+                  </li>
+                  <li>
+                    <p class="recommend-good-info-desc">
+                    ${obj.p}
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
-      `;
+        `;
+      } else {
+        tempTag = `
+        <div class="swiper-slide">
+          <div class="recommend-slide-item-btnmore">
+            <div class="recommend-slide-item-btnmore">
+              <a href="${obj.url}" class="recommend-link">
+                <i></i>
+                <g>전체보기</g>
+              </a>
+            </div>
+          </div>
+        </div>
+        `;
+      }
 
       htmlRecommendTag += tempTag;
     }

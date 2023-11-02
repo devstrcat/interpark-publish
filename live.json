@@ -1,0 +1,316 @@
+{
+  "total": 12,
+  "live_1": {
+    "live_info": {
+      "image": "images/live1.jpg",
+      "state": "방송예정",
+      "title": "소담상회 X 에이브랩",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "10월 31일 (화)",
+      "time": "16:00"
+    },
+    "live_product": {
+      "product_class": "live-product-img",
+      "product_image": "images/liveproduct1.png",
+      "product_title": "[10.31 라이브쇼핑 특가오픈] 에이브랩 리포글루타치온콜라겐",
+      "product_discount": 12,
+      "product_price": "35,000",
+      "product_url": "good.html",
+      "product_dollar": "원"
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_2": {
+    "live_info": {
+      "image": "images/live2.jpg",
+      "state": "방송예정",
+      "title": "[나트랑]스완도르 올인클루시브 5일 70만원대~",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "11월 01일 (수)",
+      "time": "18:00"
+    },
+    "live_product": {
+      "product_class": "live-product-img-disabled",
+      "product_image": "",
+      "product_title": "",
+      "product_discount": "",
+      "product_price": "",
+      "product_url": "",
+      "product_dollar": ""
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_3": {
+    "live_info": {
+      "image": "images/live3.png",
+      "state": "방송예정",
+      "title": "인천으로 떠나는 나만의 휴식! 네스트호텔 라이브특가",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "11월 02일 (목)",
+      "time": "18:00"
+    },
+    "live_product": {
+      "product_class": "live-product-img-disabled",
+      "product_image": "",
+      "product_title": "",
+      "product_discount": "",
+      "product_price": "",
+      "product_url": "",
+      "product_dollar": ""
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_4": {
+    "live_info": {
+      "image": "images/live4.png",
+      "state": "방송예정",
+      "title": "제주 자연 속에서 즐기는 온전한 쉼 ✨ 파르나스 호텔 제주",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "11월 23일 (목)",
+      "time": "19:00"
+    },
+    "live_product": {
+      "product_class": "live-product-img-disabled",
+      "product_image": "",
+      "product_title": "",
+      "product_discount": "",
+      "product_price": "",
+      "product_url": "",
+      "product_dollar": ""
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_5": {
+    "live_info": {
+      "image": "images/live5.jpg",
+      "state": "VOD",
+      "title": "전라도 특집 여수/전주/광주",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "",
+      "time": ""
+    },
+    "live_product": {
+      "product_class": "live-product-img",
+      "product_image": "images/liveproduct5.jpg",
+      "product_title": "히든베이 호텔",
+      "product_discount": 81,
+      "product_price": "84,950",
+      "product_url": "product5.html",
+      "product_dollar": "원"
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_6": {
+    "live_info": {
+      "image": "images/live6.jpg",
+      "state": "VOD",
+      "title": "진에어 동계 잔여석 & 3월 출발 단독 특가! 방송 중에만 제휴카드로 결제시 15% 추가 할인 🎁",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "",
+      "time": ""
+    },
+    "live_product": {
+      "product_class": "live-product-img",
+      "product_image": "images/liveproduct6.jpg",
+      "product_title": "[실시간 항공권] 인천 ↔ 오사카",
+      "product_discount": "",
+      "product_price": "217,900",
+      "product_url": "product6.html",
+      "product_dollar": "원"
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_7": {
+    "live_info": {
+      "image": "images/live7.jpg",
+      "state": "VOD",
+      "title": "용평리조트 최대 85% 라이브 특가! 7만원대~",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "",
+      "time": ""
+    },
+    "live_product": {
+      "product_class": "live-product-img",
+      "product_image": "images/liveproduct7.jpg",
+      "product_title": "용평리조트",
+      "product_discount": 80,
+      "product_price": "72,000",
+      "product_url": "product7.html",
+      "product_dollar": "원"
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_8": {
+    "live_info": {
+      "image": "images/live8.jpg",
+      "state": "VOD",
+      "title": "[이달의 여행] 코타키나발루 특가를 다 모았다!",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "",
+      "time": ""
+    },
+    "live_product": {
+      "product_class": "live-product-img",
+      "product_image": "images/liveproduct8.png",
+      "product_title": "[이달의 여행] 코타키나발루 특<br />가모음🎉",
+      "product_discount": "",
+      "product_price": "",
+      "product_url": "product8.html",
+      "product_dollar": ""
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_9": {
+    "live_info": {
+      "image": "images/live9.jpg",
+      "state": "VOD",
+      "title": "라한 브랜드 전 지점 라이브특가",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "",
+      "time": ""
+    },
+    "live_product": {
+      "product_class": "live-product-img",
+      "product_image": "images/liveproduct9.jpg",
+      "product_title": "[여행TV] 라한 브랜드 특집",
+      "product_discount": "",
+      "product_price": "",
+      "product_url": "product9.html",
+      "product_dollar": ""
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_10": {
+    "live_info": {
+      "image": "images/live10.jpg",
+      "state": "VOD",
+      "title": "[보홀 3박5일] 에어부산 항공권ONLY OR 패키지 349,000원~",
+      "url": "c.html"
+    },
+    "live_day": {
+      "date": "",
+      "time": ""
+    },
+    "live_product": {
+      "product_class": "live-product-img",
+      "product_image": "images/liveproduct10.jpg",
+      "product_title": "[인터파크x카쇼라 동시송출]보홀 3박 5일",
+      "product_discount": "",
+      "product_price": "",
+      "product_url": "product10.html",
+      "product_dollar": ""
+    },
+    "live_preparing": {
+      "preparing_image": "",
+      "preparing_txt": "",
+      "preparing_btn": ""
+    }
+  },
+  "live_11": {
+    "live_info": {
+      "image": "",
+      "state": "",
+      "title": "",
+      "url": ""
+    },
+    "live_day": {
+      "date": "",
+      "time": ""
+    },
+    "live_product": {
+      "product_class": "",
+      "product_image": "",
+      "product_title": "",
+      "product_discount": "",
+      "product_price": "",
+      "product_url": "",
+      "product_dollar": ""
+    },
+    "live_preparing": {
+      "preparing_url": "a.html",
+      "preparing_image": "images/live_logo.svg",
+      "preparing_txt": "방송준비중입니다.",
+      "preparing_btn": "편성표 바로가기"
+    }
+  },
+  "live_12": {
+    "live_info": {
+      "image": "",
+      "state": "",
+      "title": "",
+      "url": ""
+    },
+    "live_day": {
+      "date": "",
+      "time": ""
+    },
+    "live_product": {
+      "product_class": "",
+      "product_image": "",
+      "product_title": "",
+      "product_discount": "",
+      "product_price": "",
+      "product_url": "",
+      "product_dollar": ""
+    },
+    "live_preparing": {
+      "preparing_image": "images/live_logo.svg",
+      "preparing_txt": "방송준비중입니다.",
+      "preparing_btn": "편성표 바로가기"
+    }
+  }
+}

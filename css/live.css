@@ -50,7 +50,7 @@
 .live-img img {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   border-radius: 1.2rem;
 }
@@ -90,7 +90,7 @@
   -webkit-box-orient: vertical;
 }
 
-.live-time {
+.live-day {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -100,17 +100,17 @@
   text-align: center;
 }
 
-.live-time ul li {
+.live-day li {
   color: #fff;
   z-index: 1;
 }
 
-.live-time-date {
+.live-day-date {
   font-size: 2.8rem;
   line-height: 3.35rem;
 }
 
-.live-time-timer {
+.live-day-time {
   font-size: 5rem;
   line-height: 6rem;
   font-weight: 700;
@@ -125,16 +125,12 @@
   width: 100%;
   box-sizing: border-box;
   z-index: 1;
-}
-
-.live-product a {
   display: flex;
   justify-content: flex-end;
 }
 
 .live-product-img {
   position: absolute;
-  top: 0;
   overflow: hidden;
   left: 2rem;
   width: 6.4rem;
@@ -142,8 +138,11 @@
   border-radius: 0.6rem;
 }
 
+.live-product-img-disabled {
+  display: none;
+}
+
 .live-product-img img {
-  /* position: absolute; */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -173,29 +172,31 @@
   -webkit-box-orient: vertical;
 }
 
-.live-product-price {
+.live-product-discount {
   color: #ef3e43;
   font-size: 2rem;
   line-height: 2.4rem;
 }
 
 .live-product-price em,
-.live-product-price2 em {
+.live-product-discount em {
   font-weight: 700;
-}
-
-.live-product-price2 {
-  color: #fff;
   font-size: 2rem;
   line-height: 2.4rem;
 }
 
-.item-preparing {
+.live-product-price {
+  color: #fff;
+  font-size: 1.6rem;
+  vertical-align: bottom;
+}
+
+.live-preparing {
   background: url(../images/livebg.jpg) no-repeat 50%;
   background-size: cover;
 }
 
-.live-preparing {
+.live-preparing-link {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -209,18 +210,18 @@
   text-align: center;
 }
 
-.prepare-img {
+.preparing-img {
   height: 3.25rem;
 }
 
-.prepare-txt {
+.preparing-txt {
   margin-top: 1rem;
   font-size: 2rem;
   line-height: 2.4rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.prepare-btn span {
+.preparing-btn {
   display: inline-block;
   height: 4.2rem;
   padding: 0 1.6rem;
