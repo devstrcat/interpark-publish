@@ -52,16 +52,14 @@ window.addEventListener("load", function () {
        `;
       } else {
         tempTag = `
-            <div class="swiper-slide">
-              <div class="swiper-slide">
-                <div class="recommend-slide-item-btnmore">
-                  <a href="${obj.url}" class="recommend-link">
-                    <i></i>
-                    <g>전체보기</g>
-                  </a>
-                </div>
-              </div>
-            </div> 
+        <div class="swiper-slide">
+        <div class="ticket-slide-item-btnmore">
+          <a href="${obj.url}" class="ticket-link">
+            <i></i>
+            <g>전체보기</g>
+          </a>
+        </div>
+      </div>
           `;
       }
 

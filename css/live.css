@@ -14,15 +14,15 @@
 
 .live-slide-item {
   position: relative;
-  display: flex;
   height: 100%;
-  border-radius: 1.2rem;
+  display: flex;
   overflow: hidden;
+  border-radius: 1.2rem;
 }
 
 .live-link {
-  display: block;
   height: 100%;
+  display: block;
 }
 
 .live-img {
@@ -85,24 +85,23 @@
   line-height: 2.4rem;
   text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
   word-break: break-all;
-  text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
 .live-day {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .live-day li {
-  color: #fff;
   z-index: 1;
+  color: #fff;
 }
 
 .live-day-date {
@@ -112,29 +111,29 @@
 
 .live-day-time {
   font-size: 5rem;
-  line-height: 6rem;
   font-weight: 700;
+  line-height: 6rem;
 }
 
 .live-product {
   position: absolute;
   bottom: 2rem;
-  height: 6.4rem;
-  padding: 0 2rem;
   left: 0;
   width: 100%;
-  box-sizing: border-box;
-  z-index: 1;
+  height: 6.4rem;
   display: flex;
   justify-content: flex-end;
+  padding: 0 2rem;
+  z-index: 1;
+  box-sizing: border-box;
 }
 
 .live-product-img {
   position: absolute;
-  overflow: hidden;
   left: 2rem;
   width: 6.4rem;
   height: 6.4rem;
+  overflow: hidden;
   border-radius: 0.6rem;
 }
 
@@ -145,8 +144,8 @@
 .live-product-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   background-color: #fff;
+  object-fit: cover;
 }
 
 .live-product-info {
@@ -159,36 +158,32 @@
 
 .live-product-title {
   width: 100%;
-  white-space: nowrap;
-  color: #fff;
-  overflow: hidden;
   display: block;
+  overflow: hidden;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8rem;
-  word-break: break-all;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  color: #fff;
+  white-space: nowrap;
 }
 
 .live-product-discount {
-  color: #ef3e43;
   font-size: 2rem;
   line-height: 2.4rem;
+  color: #ef3e43;
 }
 
 .live-product-price em,
 .live-product-discount em {
-  font-weight: 700;
   font-size: 2rem;
+  font-weight: 700;
   line-height: 2.4rem;
 }
 
 .live-product-price {
-  color: #fff;
-  font-size: 1.6rem;
   vertical-align: bottom;
+  font-size: 1.6rem;
+  color: #fff;
 }
 
 .live-preparing {
@@ -198,11 +193,11 @@
 
 .live-preparing-link {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -222,14 +217,14 @@
 }
 
 .preparing-btn {
-  display: inline-block;
   height: 4.2rem;
-  padding: 0 1.6rem;
+  display: inline-block;
   margin-top: 1.4rem;
-  line-height: 4.2rem;
-  border-radius: 2.1rem;
-  font-size: 1.6rem;
-  text-align: center;
+  padding: 0 1.6rem;
   border: 0.1rem solid hsla(0, 0%, 100%, 0.5);
+  font-size: 1.6rem;
+  line-height: 4.2rem;
   color: #fff;
+  text-align: center;
+  border-radius: 2.1rem;
 }

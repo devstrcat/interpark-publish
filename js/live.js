@@ -1,10 +1,13 @@
 window.addEventListener("load", function () {
+  function numberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
   const fileName = "live.json";
 
-  const xhb = new XMLHttpRequest();
-  xhb.open("GET", fileName);
-  xhb.send();
-  xhb.onreadystatechange = function (event) {
+  const xhl = new XMLHttpRequest();
+  xhl.open("GET", fileName);
+  xhl.send();
+  xhl.onreadystatechange = function (event) {
     if (event.target.readyState === XMLHttpRequest.DONE) {
       const res = event.target.response;
       const json = JSON.parse(res);
@@ -80,7 +83,9 @@ window.addEventListener("load", function () {
                             <em>${
                               obj.live_product.product_price === ""
                                 ? ""
-                                : obj.live_product.product_price
+                                : numberWithCommas(
+                                    obj.live_product.product_price
+                                  )
                             }</em>
                             ${
                               obj.live_product.product_dollar === ""

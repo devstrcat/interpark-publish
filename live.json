@@ -16,7 +16,7 @@
       "product_image": "images/liveproduct1.png",
       "product_title": "[10.31 라이브쇼핑 특가오픈] 에이브랩 리포글루타치온콜라겐",
       "product_discount": 12,
-      "product_price": "35,000",
+      "product_price": 35000,
       "product_url": "good.html",
       "product_dollar": "원"
     },
@@ -120,7 +120,7 @@
       "product_image": "images/liveproduct5.jpg",
       "product_title": "히든베이 호텔",
       "product_discount": 81,
-      "product_price": "84,950",
+      "product_price": 84950,
       "product_url": "product5.html",
       "product_dollar": "원"
     },
@@ -146,7 +146,7 @@
       "product_image": "images/liveproduct6.jpg",
       "product_title": "[실시간 항공권] 인천 ↔ 오사카",
       "product_discount": "",
-      "product_price": "217,900",
+      "product_price": 217900,
       "product_url": "product6.html",
       "product_dollar": "원"
     },
@@ -172,7 +172,7 @@
       "product_image": "images/liveproduct7.jpg",
       "product_title": "용평리조트",
       "product_discount": 80,
-      "product_price": "72,000",
+      "product_price": 72000,
       "product_url": "product7.html",
       "product_dollar": "원"
     },
