@@ -1,61 +1,61 @@
 {
   "total": 10,
   "book_1": {
-    "file": "images/book10.jpg",
+    "file": "images/book/book10.jpg",
     "url": "a.html",
     "title": "물리박사 김상욱의 수상한 연구실 1",
     "price": 15120
   },
   "book_2": {
-    "file": "images/book4.jpg",
+    "file": "images/book/book4.jpg",
     "url": "b.html",
     "title": "도시와 그 불확실한 벽 ",
     "price": 17550
   },
   "book_3": {
-    "file": "images/book2.jpg",
+    "file": "images/book/book2.jpg",
     "url": "c.html",
     "title": "세계지도를 펼치면 돈의 흐름이 보인다",
     "price": 17820
   },
   "book_4": {
-    "file": "images/book5.jpg",
+    "file": "images/book/book5.jpg",
     "url": "d.html",
     "title": "마시지 않을 수 없는 밤이니까요",
     "price": 15300
   },
   "book_5": {
-    "file": "images/book5.jpg",
+    "file": "images/book/book5.jpg",
     "url": "e.html",
     "title": "세븐틴 헤븐 캐럿반 앨범 세븐틴스 11집 SEVENTEEN",
     "price": 12300
   },
   "book_6": {
-    "file": "images/book6.jpg",
+    "file": "images/book/book6.jpg",
     "url": "f.html",
     "title": "야나두키즈 12개월 통합이용권 (+30일 추가증정)",
     "price": 103550
   },
   "book_7": {
-    "file": "images/book7.jpg",
+    "file": "images/book/book7.jpg",
     "url": "b.html",
     "title": "죽어나간 시간을 위한 애도",
     "price": 16020
   },
   "book_8": {
-    "file": "images/book8.jpg",
+    "file": "images/book/book8.jpg",
     "url": "c.html",
     "title": "생각이 너무 많은 어른을 위한 심리학",
     "price": 16020
   },
   "book_9": {
-    "file": "images/book9.png",
+    "file": "images/book/book9.png",
     "url": "c.html",
     "title": "야나두키즈 1년 통합이용권+영어전집(야나두키즈 잉글리쉬)",
     "price": 160550
   },
   "book_10": {
-    "file": "images/book10.jpg",
+    "file": "images/book/book10.jpg",
     "url": "c.html",
     "title": "기적의 자세요정",
     "price": 19800

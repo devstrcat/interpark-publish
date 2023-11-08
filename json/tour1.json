@@ -1,7 +1,7 @@
 {
   "total": 9,
   "tour_1": {
-    "file": "images/tour1.jpg",
+    "file": "images/tour/tour1.jpg",
     "url": "a.html",
     "box": "국적기직항",
     "blue": "인솔자 동행, 선택관광 All 포함",
@@ -9,7 +9,7 @@
     "price": "3,999,000"
   },
   "tour_2": {
-    "file": "images/tour2.jpg",
+    "file": "images/tour/tour2.jpg",
     "url": "b.html",
     "box": "베스트셀러",
     "blue": "소아 동반 인기상품",
@@ -17,7 +17,7 @@
     "price": "619,000"
   },
   "tour_3": {
-    "file": "images/tour3.jpg",
+    "file": "images/tour/tour3.jpg",
     "url": "c.html",
     "box": "방콕",
     "blue": "2022년 오픈한 신상 럭셔리 호텔",
@@ -25,7 +25,7 @@
     "price": "285,389"
   },
   "tour_4": {
-    "file": "images/tour4.jpg",
+    "file": "images/tour/tour4.jpg",
     "url": "d.html",
     "box": "NO쇼핑",
     "blue": "2인이상 출발, 가이드팁포함",
@@ -33,7 +33,7 @@
     "price": "2,040,000"
   },
   "tour_5": {
-    "file": "images/tour5.jpg",
+    "file": "images/tour/tour5.jpg",
     "url": "e.html",
     "box": "올인클루시브",
     "blue": "얼리 체크인 or 레이트 체크아웃 포함",
@@ -41,7 +41,7 @@
     "price": "560,000"
   },
   "tour_6": {
-    "file": "images/tour6.jpg",
+    "file": "images/tour/tour6.jpg",
     "url": "f.html",
     "box": "기획특가",
     "blue": "F/W 시즌 패키지",
@@ -49,7 +49,7 @@
     "price": "2,599,000"
   },
   "tour_7": {
-    "file": "images/tour7.jpg",
+    "file": "images/tour/tour7.jpg",
     "url": "b.html",
     "box": "코타키나발루",
     "blue": "5성급, 선셋 명소 탄중아루 해변 위치",
@@ -57,7 +57,7 @@
     "price": "219,234"
   },
   "tour_8": {
-    "file": "images/tour8.jpg",
+    "file": "images/tour/tour8.jpg",
     "url": "c.html",
     "box": "파리",
     "blue": "파리15구, 위치&가성비",
@@ -65,7 +65,7 @@
     "price": "277,820"
   },
   "tour_9": {
-    "file": "images/tour9.jpg",
+    "file": "images/tour/tour9.jpg",
     "url": "d.html",
     "box": "강력특가",
     "blue": "슈페리어 더블, 시티뷰",

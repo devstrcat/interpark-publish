@@ -1,83 +1,83 @@
 {
   "total": 20,
   "event_1": {
-    "file": "images/event1.png",
+    "file": "images/event/event1.png",
     "url": "a.html"
   },
   "event_2": {
-    "file": "images/event2.jpg",
+    "file": "images/event/event2.jpg",
     "url": "b.html"
   },
   "event_3": {
-    "file": "images/event3.jpg",
+    "file": "images/event/event3.jpg",
     "url": "c.html"
   },
   "event_4": {
-    "file": "images/event4.png",
+    "file": "images/event/event4.png",
     "url": "d.html"
   },
   "event_5": {
-    "file": "images/event5.jpg",
+    "file": "images/event/event5.jpg",
     "url": "e.html"
   },
   "event_6": {
-    "file": "images/event6.jpg",
+    "file": "images/event/event6.jpg",
     "url": "f.html"
   },
   "event_7": {
-    "file": "images/event7.jpg",
+    "file": "images/event/event7.jpg",
     "url": "b.html"
   },
   "event_8": {
-    "file": "images/event8.jpg",
+    "file": "images/event/event8.jpg",
     "url": "c.html"
   },
   "event_9": {
-    "file": "images/event9.jpg",
+    "file": "images/event/event9.jpg",
     "url": "d.html"
   },
   "event_10": {
-    "file": "images/event10.jpg",
+    "file": "images/event/event10.jpg",
     "url": "e.html"
   },
   "event_11": {
-    "file": "images/event11.jpg",
+    "file": "images/event/event11.jpg",
     "url": "b.html"
   },
   "event_12": {
-    "file": "images/event12.jpg",
+    "file": "images/event/event12.jpg",
     "url": "c.html"
   },
   "event_13": {
-    "file": "images/event13.jpg",
+    "file": "images/event/event13.jpg",
     "url": "d.html"
   },
   "event_14": {
-    "file": "images/event14.png",
+    "file": "images/event/event14.png",
     "url": "e.html"
   },
   "event_15": {
-    "file": "images/event15.jpg",
+    "file": "images/event/event15.jpg",
     "url": "b.html"
   },
   "event_16": {
-    "file": "images/event16.jpg",
+    "file": "images/event/event16.jpg",
     "url": "c.html"
   },
   "event_17": {
-    "file": "images/event17.jpg",
+    "file": "images/event/event17.jpg",
     "url": "d.html"
   },
   "event_18": {
-    "file": "images/event18.jpg",
+    "file": "images/event/event18.jpg",
     "url": "e.html"
   },
   "event_19": {
-    "file": "images/event19.jpg",
+    "file": "images/event/event19.jpg",
     "url": "b.html"
   },
   "event_20": {
-    "file": "images/event20.jpg",
+    "file": "images/event/event20.jpg",
     "url": "c.html"
   }
 }

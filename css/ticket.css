@@ -91,6 +91,10 @@
   box-sizing: border-box;
 }
 
+.ticket-good-info-tag .disabled {
+  display: none;
+}
+
 .ticket-good-info-tag .blue {
   border-color: rgba(74, 149, 255, 0.3);
   color: #4a95ff;
@@ -120,4 +124,9 @@
 .ticket-link g {
   font-size: 14px;
   text-align: center;
+}
+
+.ticket-slide-next,
+.ticket-slide-prev {
+  top: 46%;
 }
