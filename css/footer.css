@@ -7,8 +7,8 @@
 .footer-top {
   max-width: none;
   height: 5rem;
-  padding: 0;
   margin-top: 0;
+  padding: 0;
   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -16,19 +16,19 @@
 
 .footer-list {
   width: 128rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5rem;
   margin: 0 auto;
 }
 
 .footer-list li {
-  padding: 0 3.1rem;
   position: relative;
+  height: 100%;
   display: inline-flex;
   align-items: center;
-  height: 100%;
+  padding: 0 3.1rem;
   line-height: 1.7rem;
   box-sizing: border-box;
 }
@@ -42,17 +42,17 @@
 }
 
 .footer-list > li::before {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin: 0;
-  transform: translateY(-50%);
   content: "";
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
   width: 0.1rem;
   height: 1.2rem;
+  display: inline-block;
+  margin: 0;
   vertical-align: middle;
   background: rgba(0, 0, 0, 0.3);
+  transform: translateY(-50%);
 }
 
 .footer-list li:first-child::before {
@@ -62,34 +62,34 @@
 .footer-list li a,
 .footer-list li button,
 .list-hover ul li a {
+  vertical-align: middle;
   font-size: 1.3rem;
   line-height: 1.6rem;
-  vertical-align: middle;
-  white-space: nowrap;
   color: #333;
+  white-space: nowrap;
   cursor: pointer;
 }
 
 .footer-list li button::after {
   content: "";
-  display: inline-block;
-  background: url(../images/footer_arrow.svg) no-repeat 50%;
   width: 0.8rem;
   height: 0.6rem;
+  display: inline-block;
   margin-left: 0.4rem;
   vertical-align: 0.1rem;
+  background: url(../images/footer_arrow.svg) no-repeat 50%;
 }
 
 .list-hover {
-  display: none;
   position: absolute;
-  right: 2rem;
   top: 3.8rem;
+  right: 2rem;
+  display: none;
   padding: 1.6rem;
-  background: #fff;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.8rem;
   z-index: 1;
+  background: #fff;
+  border-radius: 0.8rem;
 }
 
 .footer-list li:hover .list-hover {
@@ -99,8 +99,8 @@
 .list-hover ul li {
   display: block;
   padding: 1rem 0 0;
-  text-align: left;
   line-height: 1.8rem;
+  text-align: left;
   white-space: nowrap;
 }
 
@@ -109,19 +109,19 @@
 }
 
 .footer-inner {
-  margin: 0 auto;
   width: 128rem;
+  margin: 0 auto;
   padding: 0 0 5rem;
-  text-align: center;
-  color: rgba(18, 18, 18, 0.5);
   font-size: 1.1rem;
+  color: rgba(18, 18, 18, 0.5);
+  text-align: center;
 }
 
 .footer-info {
   position: relative;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin-top: 3rem;
   padding: 0;
   box-sizing: border-box;
@@ -129,19 +129,19 @@
 
 .footer-info:after {
   content: "";
-  display: block;
   position: absolute;
-  left: 50%;
   top: 0;
+  left: 50%;
   width: 0.1rem;
   height: 100%;
+  display: block;
   margin-left: -0.05rem;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
 .footer-info-slide {
-  display: flex;
   width: 50%;
+  display: flex;
   margin: 0;
   box-sizing: border-box;
 }
@@ -156,13 +156,13 @@
 
 .footer-info-slide h2 {
   display: block;
+  margin-right: 1rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.7rem;
   color: #111;
   text-align: left;
-  margin-right: 1rem;
   white-space: nowrap;
 }
 
@@ -170,9 +170,9 @@
   margin: 0;
   padding: 0;
   font-size: 1.2rem;
+  line-height: 1.7rem;
   color: #666;
   text-align: left;
-  line-height: 1.7rem;
   letter-spacing: 0;
 }
 
@@ -182,9 +182,9 @@
 
 .footer-txt ul > li::before {
   content: "";
-  display: inline-block;
   width: 0.1rem;
   height: 1rem;
+  display: inline-block;
   margin: 0 0.3rem;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -201,9 +201,9 @@
 
 .footer-txt ul > li span::before {
   content: "";
-  display: inline-block;
   width: 0.1rem;
   height: 1rem;
+  display: inline-block;
   margin: 0 0.3rem;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -216,11 +216,11 @@
 }
 
 .footer-notice {
-  display: block;
   max-width: none;
-  text-align: left;
+  display: block;
   margin: 1rem 0 0;
   font-size: 1.1rem;
+  text-align: left;
 }
 
 .footer-notice p {
