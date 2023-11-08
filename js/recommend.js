@@ -1,57 +1,60 @@
-// 모든 js 는 html 태그를 로드 완료하고 실행해야 안전하다.
-// 그런데 현재 .js 파일을 head 태그에서 불러들이므로 불안전하다.
-// 오류가 날 확률이 무척 높다.
-// 아래의 window 는 웹브라우저다.
-// onload 절대로 소문자로 작성입니다. (약속 되어 있습니다)
-// 아래 문장 해석
-// 웹브라우저에 html, css, js, image.. 로드 완료 하면 function 을 한다라고 약속을 하였다.
-
-// window.onload = function () {
-// 추천상품 기능
-// };
-
-// 웹브라우저 코딩하는 위치가 정해져있다 생각하자.
-// window.load = function () {
-//     코딩자리
-// }
-// window.addEventListener("load", function(){
-//   코딩자리
-// })
-// $(document).ready(function(){
-//    코딩자리
-// })
-
 window.addEventListener("load", function () {
   // 숫자에 콤마를 출력한 함수
   function numberWithCommas(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  // 추천 상품 슬라이드 기능
-  // 글로써 코딩 시나리오 작성 : 의사코드
-  // 1. 외부 데이터를 불러온다.
-  // :  외부 데이터 파일명.json
-  const fileName = "recommend.json";
+  const initCate = "recommend1";
+  const initFileName = "json/" + initCate + ".json";
+  // 활성화된 버튼 설정
+  document.querySelectorAll(".cate-bt").forEach(function (button) {
+    if (button.getAttribute("data-category") === initCate) {
+      button.classList.add("cate-bt-active");
+    }
+  });
 
-  // 외부 데이터 가져올때 작성법
   const xhr = new XMLHttpRequest();
-  // 외부의 파일을 열어라
-  // Get 방식으로 파일을 열어준다.
-  xhr.open("GET", fileName);
-  // 실제로 실행하자.
+  xhr.open("GET", initFileName);
   xhr.send();
-  // 데이터의 전송 상태를 체크합니다.
   xhr.onreadystatechange = function (event) {
     if (event.target.readyState === XMLHttpRequest.DONE) {
-      // 코드가 가독성이 떨어지므로 변수에 담는다.
-      // 규칙은 const 부터 작성하자.
-      // const 가 문제가 된다면 let 으로 변경한다.
       const res = event.target.response;
-      // res 를 전달해서 html 태그를 만든다.
       const json = JSON.parse(res);
       makeHtmlTag(json);
     }
   };
+
+  document
+    .querySelectorAll(".recommend-list li .cate-bt")
+    .forEach(function (button) {
+      button.addEventListener("click", function () {
+        // 모든 recommend-list li cate-bt 요소에서 cate-bt-active 클래스를 제거
+        document
+          .querySelectorAll(".recommend-list li .cate-bt")
+          .forEach(function (el) {
+            el.classList.remove("cate-bt-active");
+          });
+
+        // 클릭한 버튼에 cate-bt-active 클래스를 추가
+        button.classList.add("cate-bt-active");
+
+        // 클릭한 버튼의 data-category 속성을 이용하여 해당 JSON 파일 이름을 결정
+        const category = button.getAttribute("data-category");
+        const fileName = "json/" + category + ".json";
+
+        // XMLHttpRequest를 사용하여 JSON 파일 로드
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", fileName);
+        xhr.send();
+        xhr.onreadystatechange = function (event) {
+          if (event.target.readyState === XMLHttpRequest.DONE) {
+            const res = event.target.response;
+            const json = JSON.parse(res);
+            makeHtmlTag(json);
+          }
+        };
+      });
+    });
 
   // html 태그를 만드는 기능
   function makeHtmlTag(_res) {
@@ -62,20 +65,6 @@ window.addEventListener("load", function () {
 
     // 2. html 태그를 백틱을 이용해서 만든다.
     let htmlRecommendTag = ``;
-    // _res 에 담겨진 객체에서 total 을 보관한다.
-    // const total = _res.total;
-    // const recommend_1 = _res.recommend_1;
-    // const recommend_2 = _res.recommend_2;
-    // const recommend_3 = _res.recommend_3;
-    // const recommend_4 = _res.recommend_4;
-    // const recommend_5 = _res.recommend_5;
-    // const recommend_6 = _res.recommend_6;
-    // const recommend_7 = _res.recommend_7;
-    // const recommend_8 = _res.recommend_8;
-    // const recommend_9 = _res.recommend_9;
-    // const recommend_10 = _res.recommend_10;
-    // const recommend_11 = _res.recommend_11;
-    // const recommend_12 = _res.recommend_12;
 
     // 우리가 몇번 반복해야 하는지 안다.
     for (let i = 0; i < _res.total; i++) {

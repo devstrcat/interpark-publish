@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  const fileName = "event.json";
+  const fileName = "json/event.json";
   const xhe = new XMLHttpRequest();
   xhe.open("GET", fileName);
   xhe.send();
@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
   function makeHtmlTag(_res) {
     let htmlEventTag = ``;
 
-    for (let i = 1; i < _res.total; i++) {
+    for (let i = 0; i < _res.total; i++) {
       const index = i + 1;
       const obj = _res["event_" + index];
 

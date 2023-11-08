@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-  const fileName = "visual.json";
+  const fileName = "json/visual.json";
   const xhv = new XMLHttpRequest();
   xhv.open("GET", fileName);
   xhv.send();

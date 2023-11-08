@@ -38,7 +38,7 @@
       "time": "18:00"
     },
     "live_product": {
-      "product_class": "live-product-img-disabled",
+      "product_class": "",
       "product_image": "",
       "product_title": "",
       "product_discount": "",
@@ -64,7 +64,7 @@
       "time": "18:00"
     },
     "live_product": {
-      "product_class": "live-product-img-disabled",
+      "product_class": "",
       "product_image": "",
       "product_title": "",
       "product_discount": "",
@@ -90,7 +90,7 @@
       "time": "19:00"
     },
     "live_product": {
-      "product_class": "live-product-img-disabled",
+      "product_class": "",
       "product_image": "",
       "product_title": "",
       "product_discount": "",
@@ -248,7 +248,7 @@
     "live_product": {
       "product_class": "live-product-img",
       "product_image": "images/liveproduct10.jpg",
-      "product_title": "[인터파크x카쇼라 동시송출]보홀 3박 5일",
+      "product_title": "[인터파크x카쇼라 동시송출]보홀<br /> 3박 5일",
       "product_discount": "",
       "product_price": "",
       "product_url": "product10.html",

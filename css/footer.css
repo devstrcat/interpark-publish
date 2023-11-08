@@ -127,8 +127,23 @@
   box-sizing: border-box;
 }
 
+.footer-info:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0.1rem;
+  height: 100%;
+  margin-left: -0.05rem;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
 .footer-info-slide {
   display: flex;
+  width: 50%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .footer-info-slide:first-child {

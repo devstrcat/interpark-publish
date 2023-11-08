@@ -137,10 +137,6 @@
   border-radius: 0.6rem;
 }
 
-.live-product-img-disabled {
-  display: none;
-}
-
 .live-product-img img {
   width: 100%;
   height: 100%;

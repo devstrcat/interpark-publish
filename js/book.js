@@ -3,10 +3,17 @@ window.addEventListener("load", function () {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  const fileName = "book.json";
+  const initCate = "book1";
+  const initFileName = "json/" + initCate + ".json";
+  // 활성화된 버튼 설정
+  document.querySelectorAll(".cate-bt").forEach(function (button) {
+    if (button.getAttribute("data-category") === initCate) {
+      button.classList.add("cate-bt-active");
+    }
+  });
 
   const xhb = new XMLHttpRequest();
-  xhb.open("GET", fileName);
+  xhb.open("GET", initFileName);
   xhb.send();
   xhb.onreadystatechange = function (event) {
     if (event.target.readyState === XMLHttpRequest.DONE) {
@@ -15,6 +22,38 @@ window.addEventListener("load", function () {
       makeHtmlTag(json);
     }
   };
+
+  document
+    .querySelectorAll(".book-list li .cate-bt")
+    .forEach(function (button) {
+      button.addEventListener("click", function () {
+        // 모든 book-list li cate-bt 요소에서 cate-bt-active 클래스를 제거
+        document
+          .querySelectorAll(".book-list li .cate-bt")
+          .forEach(function (el) {
+            el.classList.remove("cate-bt-active");
+          });
+
+        // 클릭한 버튼에 cate-bt-active 클래스를 추가
+        button.classList.add("cate-bt-active");
+
+        // 클릭한 버튼의 data-category 속성을 이용하여 해당 JSON 파일 이름을 결정
+        const category = button.getAttribute("data-category");
+        const fileName = "json/" + category + ".json";
+
+        // XMLHttpRequest를 사용하여 JSON 파일 로드
+        const xhb = new XMLHttpRequest();
+        xhb.open("GET", fileName);
+        xhb.send();
+        xhb.onreadystatechange = function (event) {
+          if (event.target.readyState === XMLHttpRequest.DONE) {
+            const res = event.target.response;
+            const json = JSON.parse(res);
+            makeHtmlTag(json);
+          }
+        };
+      });
+    });
 
   function makeHtmlTag(_res) {
     let htmlBookTag = ``;

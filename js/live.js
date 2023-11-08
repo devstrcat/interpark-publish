@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   function numberWithCommas(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
-  const fileName = "live.json";
+  const fileName = "json/live.json";
 
   const xhl = new XMLHttpRequest();
   xhl.open("GET", fileName);
@@ -103,7 +103,7 @@ window.addEventListener("load", function () {
         tempTag = `
         <div class="swiper-slide">
         <div class="live-slide-item live-preparing">
-            <a href="${obj.live_preparing.preparing_url}" class="live-link live-preparing-link">
+            <a href="${obj.live_preparing.preparing_url}" class="live-preparing-link">
                 <ul class="live-preparing-info">
                     <li class="preparing-img">
                         <img src="${obj.live_preparing.preparing_image}"
