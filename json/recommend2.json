@@ -1,83 +1,87 @@
 {
   "total": 12,
   "recommend_1": {
-    "file": "images/recommend/r2.jpg",
+    "file": "images/recommend/r2_1.jpg",
     "url": "a.html",
-    "discount": 27,
-    "price": 7600,
-    "p": "[스포츠파크] 노스페이스 겨울 구스다운 패딩 슬립온 NS93M50"
+    "p": "[쇼핑앱특가] (인앱특가 3,990원/병당333원) 아이팝 무라벨 먹는샘물 생수 2L*12펫 / 하이트진로",
+    "discount": 17,
+    "price": 5690
   },
   "recommend_2": {
-    "file": "images/recommend/r2.jpg",
+    "file": "images/recommend/r2_2.jpg",
     "url": "b.html",
-    "p": "서울우유 멸균 초코/딸기/흰우유 24팩/48팩 외",
-    "discount": 38,
-    "price": 12500
+    "p": "[산지직송] 국내산 햇 양파 5kg 3kg 특대 (2개사면 1kg 추가증정)",
+    "discount": 0,
+    "price": 7900
   },
   "recommend_3": {
-    "file": "images/recommend/r2.jpg",
+    "file": "images/recommend/r2_3.jpg",
     "url": "c.html",
-    "p": "[최종가 10,850원] 17~18브릭스 미니 꿀사과 엔비사과 2kg (5-9과/가정용/펜시등급)",
-    "discount": 0,
-    "price": 15500
+    "p": "[산지직송] 포항 구룡포 제철 꽁치 과메기 및 야채세트 모음전!",
+    "discount": 8,
+    "price": 10830
   },
   "recommend_4": {
-    "file": "images/recommend/r4.png",
+    "file": "images/recommend/r2_4.jpg",
     "url": "d.html",
-    "p": "[I*POP] 아이팝 스파클링 워터 플레인 / 아이팝 탄산수 / 강탄산 / 진짜 먹는 샘물로 만든 탄산수",
-    "discount": 22,
-    "price": 6900
+    "p": "[청구할인6%]  23년산 햅쌀 10kg 골라담기, 진품경기미/수향미특/경기추청/이천",
+    "discount": 3,
+    "price": 31500
   },
   "recommend_5": {
-    "file": "images/recommend/r2.jpg",
+    "file": "images/recommend/r2_5.jpg",
     "url": "e.html",
-    "p": "큐라이프 니트릴장갑 200매 (색상 블랙, 화이트 / 사이즈 S, M, L 선택)",
-    "discount": 24,
-    "price": 7820
+    "p": "[쇼핑앱추가쿠폰] 해태 포키 극세4+블루베리2+딸기2 /극세 44g * 8 / 빼빼로데이 / 특별한 날엔 포키",
+    "discount": 26,
+    "price": 9900
   },
   "recommend_6": {
-    "file": "images/recommend/r2.jpg",
+    "file": "images/recommend/r2_6.png",
     "url": "f.html",
-    "p": "아모스 04 스타일 컬링 2X 에센스 150ml",
-    "discount": 22,
-    "price": 6400
+    "p": "산지직송 초간편 자연산 손질오징어 1kg (7미-8미)",
+    "discount": 12,
+    "price": 15560
   },
   "recommend_7": {
-    "file": "images/recommend/r2.jpg",
+    "file": "images/recommend/r2_7.jpg",
     "url": "b.html",
-    "p": "[김혜자 세제] 프로쉬 공식몰 독일 식기세척기세제 그린레몬 50개입 2개+주방세제 1개+펌프 1개 증정",
-    "discount": 52,
-    "price": 32900
+    "p": "바다원 어포튀각 110g*5봉",
+    "discount": 4,
+    "price": 23900
   },
   "recommend_8": {
-    "file": "images/recommend/r2.jpg",
+    "file": "images/recommend/r2_8.jpg",
     "url": "c.html",
-    "p": "[스포츠파크 타임딜] 크록스 바야 라인드 퍼즈 스트랩 클로그 3종 택 1",
-    "discount": 28,
-    "price": 39000
+    "p": "팸퍼스 베이비드라이 팬티 밴드 1박스 기저귀",
+    "discount": 0,
+    "price": 68900
   },
   "recommend_9": {
-    "file": "images/recommend/r9.jpg",
+    "file": "images/recommend/r2_9.jpg",
     "url": "d.html",
-    "p": "윙잇 고른 토핑가득 부대찌개 800g*2개",
-    "discount": 16,
-    "price": 11210
+    "p": "23년 제철 국내산 태안 자연산 활 꽃게 3kg 당일조업 조업즉시발송 톱밥포장 빙장포장 (키로당 3-5미)",
+    "discount": 2,
+    "price": 33900
   },
   "recommend_10": {
-    "file": "images/recommend/r10.jpg",
+    "file": "images/recommend/r2_10.jpg",
     "url": "d.html",
-    "p": "[만원의행복] 호두앤 토핑호두과자 오리지널 40알 외 앙버터/누텔라/블루베리 혼합 골라담기",
-    "discount": 34,
-    "price": 5900
+    "p": "[11/7 오쎈 다운로드쿠폰가 7,670원] 크리오 쿨 맥스 민트 치약 100g x8개 민트/스트롱 민트 택1_I",
+    "discount": 12,
+    "price": 11230
   },
   "recommend_11": {
-    "file": "images/recommend/r11.jpg",
+    "file": "images/recommend/r2_11.jpg",
     "url": "d.html",
-    "p": "[스포츠파크] 불스원샷 7만키로(70000km) X 2개입",
-    "discount": 38,
-    "price": 19800
+    "p": "[컬쳐랜드] 모바일 문화상품권 1만원권_카드가능",
+    "discount": 3,
+    "price": 9700
   },
   "recommend_12": {
-    "url": "go.html"
+    "file": "images/recommend/r2_12.jpg",
+    "url": "d.html",
+    "p": "[특가]전병 (1kg +1kg ) 옛날과자 센베이 오란다 고급전병(실중량)",
+    "discount": 20,
+    "price": 10960
   }
 }

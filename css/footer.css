@@ -56,7 +56,7 @@
 }
 
 .footer-list li:first-child::before {
-  display: none;
+  /* display: none; */
 }
 
 .footer-list li a,

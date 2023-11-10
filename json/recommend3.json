@@ -1,83 +1,87 @@
 {
   "total": 12,
   "recommend_1": {
-    "file": "images/recommend/r3.jpg",
+    "file": "images/recommend/r3_1.jpg",
     "url": "a.html",
-    "discount": 27,
-    "price": 7600,
-    "p": "[스포츠파크] 노스페이스 겨울 구스다운 패딩 슬립온 NS93M50"
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 사골곰탕500g(실온)",
+    "discount": 0,
+    "price": 1900
   },
   "recommend_2": {
-    "file": "images/recommend/r3.jpg",
+    "file": "images/recommend/r3_2.jpg",
     "url": "b.html",
-    "p": "서울우유 멸균 초코/딸기/흰우유 24팩/48팩 외",
-    "discount": 38,
-    "price": 12500
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 하우촌 오장동 냉면 1인분 물냉면 비빔냉면",
+    "discount": 0,
+    "price": 2900
   },
   "recommend_3": {
-    "file": "images/recommend/r3.jpg",
+    "file": "images/recommend/r3_3.jpg",
     "url": "c.html",
-    "p": "[최종가 10,850원] 17~18브릭스 미니 꿀사과 엔비사과 2kg (5-9과/가정용/펜시등급)",
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 국내산 사골곰탕 500g 외 실온 국 탕 반찬 25종 모음",
     "discount": 0,
-    "price": 15500
+    "price": 1900
   },
   "recommend_4": {
-    "file": "images/recommend/r4.png",
+    "file": "images/recommend/r3_4.jpg",
     "url": "d.html",
-    "p": "[I*POP] 아이팝 스파클링 워터 플레인 / 아이팝 탄산수 / 강탄산 / 진짜 먹는 샘물로 만든 탄산수",
-    "discount": 22,
-    "price": 6900
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 프리미엄 궁중찜닭 450g (실온)",
+    "discount": 10,
+    "price": 6300
   },
   "recommend_5": {
-    "file": "images/recommend/r3.jpg",
+    "file": "images/recommend/r3_5.jpg",
     "url": "e.html",
-    "p": "큐라이프 니트릴장갑 200매 (색상 블랙, 화이트 / 사이즈 S, M, L 선택)",
-    "discount": 24,
-    "price": 7820
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 소고기미역국500g(실온)",
+    "discount": 10,
+    "price": 4950
   },
   "recommend_6": {
-    "file": "images/recommend/r3.jpg",
+    "file": "images/recommend/r3_6.jpg",
     "url": "f.html",
-    "p": "아모스 04 스타일 컬링 2X 에센스 150ml",
-    "discount": 22,
-    "price": 6400
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 육개장500g(실온)",
+    "discount": 10,
+    "price": 4950
   },
   "recommend_7": {
-    "file": "images/recommend/r3.jpg",
+    "file": "images/recommend/r3_7.jpg",
     "url": "b.html",
-    "p": "[김혜자 세제] 프로쉬 공식몰 독일 식기세척기세제 그린레몬 50개입 2개+주방세제 1개+펌프 1개 증정",
-    "discount": 52,
-    "price": 32900
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 고추장찌개500g(실온)",
+    "discount": 10,
+    "price": 4950
   },
   "recommend_8": {
-    "file": "images/recommend/r8.jpg",
+    "file": "images/recommend/r3_8.jpg",
     "url": "c.html",
-    "p": "[스포츠파크 타임딜] 크록스 바야 라인드 퍼즈 스트랩 클로그 3종 택 1",
-    "discount": 28,
-    "price": 39000
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 차돌된장찌개500g(실온)",
+    "discount": 10,
+    "price": 4950
   },
   "recommend_9": {
-    "file": "images/recommend/r9.jpg",
+    "file": "images/recommend/r3_9.jpg",
     "url": "d.html",
-    "p": "윙잇 고른 토핑가득 부대찌개 800g*2개",
-    "discount": 16,
-    "price": 11210
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 프리미엄 닭볶음탕 450g(실온)",
+    "discount": 10,
+    "price": 6300
   },
   "recommend_10": {
-    "file": "images/recommend/r10.jpg",
+    "file": "images/recommend/r3_10.jpg",
     "url": "d.html",
-    "p": "[만원의행복] 호두앤 토핑호두과자 오리지널 40알 외 앙버터/누텔라/블루베리 혼합 골라담기",
-    "discount": 34,
-    "price": 5900
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 소고기장조림130g(실온)",
+    "discount": 10,
+    "price": 4950
   },
   "recommend_11": {
-    "file": "images/recommend/r11.jpg",
+    "file": "images/recommend/r3_11.jpg",
     "url": "d.html",
-    "p": "[스포츠파크] 불스원샷 7만키로(70000km) X 2개입",
-    "discount": 38,
-    "price": 19800
+    "p": "★추가 3% 다운로드 쿠폰★ 교동 프리미엄 순살 갈비탕 450g(실온)",
+    "discount": 10,
+    "price": 6300
   },
   "recommend_12": {
-    "url": "go.html"
+    "file": "",
+    "url": "d.html",
+    "p": "",
+    "discount": 0,
+    "price": 0
   }
 }
